@@ -7,6 +7,7 @@ public class Main {
         System.out.println(z4(1,22));
         z5(-10);
         System.out.println(z6(-10));
+        z7("Дамир");
     }
 
     private static int z3(int a, int b, int c, int d) {
@@ -27,6 +28,10 @@ public class Main {
 
     private static boolean z6(int a) {
         return a < 0 ? true : false;
+    }
+
+    private static void z7(String name) {
+        System.out.println("Привет, " + name);
     }
 
 }
