@@ -8,7 +8,11 @@ public class Main {
         z5(-10);
         System.out.println(z6(-10));
         z7("Дамир");
-        z8(2004);
+        z13(2000);
+        System.out.println(z8(false, false));
+        // (!(a < b) && !(a > b)) Аналогично (a == b)
+        System.out.println(z10(4,2));
+
     }
 
     private static int z3(int a, int b, int c, int d) {
@@ -35,7 +39,15 @@ public class Main {
         System.out.println("Привет, " + name);
     }
 
-    private static void z8(int year) {
+    private static boolean z8(boolean a, boolean b) {
+        return (!(a && b) && (a || b)) || ((a && b) || !(a || b));
+    }
+
+    private static boolean z10(int a, int b) {
+        return (a % b) ==0 ? true : false;
+    }
+
+    private static void z13(int year) {
         if ((year % 4) != 0) {
             System.out.println(year + " год невысокосный");
         } else if ((year % 100) == 0) {
