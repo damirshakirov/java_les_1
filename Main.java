@@ -8,6 +8,7 @@ public class Main {
         z5(-10);
         System.out.println(z6(-10));
         z7("Дамир");
+        z8(2004);
     }
 
     private static int z3(int a, int b, int c, int d) {
@@ -34,4 +35,13 @@ public class Main {
         System.out.println("Привет, " + name);
     }
 
+    private static void z8(int year) {
+        if ((year % 4) != 0) {
+            System.out.println(year + " год невысокосный");
+        } else if ((year % 100) == 0) {
+            if ((year % 400) == 0) {
+                System.out.println(year + " год высокосный");
+            } else System.out.println(year +" год невысокосный");
+        } else System.out.println(year + " год высокосный");
+    }
 }
