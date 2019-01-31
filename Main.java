@@ -6,6 +6,7 @@ public class Main {
         System.out.println(z3(10, 2, 3, 4));
         System.out.println(z4(1,22));
         z5(-10);
+        System.out.println(z6(-10));
     }
 
     private static int z3(int a, int b, int c, int d) {
@@ -22,6 +23,10 @@ public class Main {
         if (a >= 0) {
             System.out.println("Передано положительное число");
         } else System.out.println("Передано отрицательное число");
+    }
+
+    private static boolean z6(int a) {
+        return a < 0 ? true : false;
     }
 
 }
