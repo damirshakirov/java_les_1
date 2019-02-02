@@ -150,7 +150,7 @@ public class Main {
         } else return false;
     }
 
-    private static void z17(int r, int g, int b) {
+    private static void z17(float r, float g, float b) {
        /*
        Метод, который на вход получает информацию о цвете в формате RGB и переводит их в формат CMYK.
        Результат вывести в консоль
@@ -162,7 +162,7 @@ public class Main {
         float computedC = 1 - (r / 255);
         float computedM = 1 - (g / 255);
         float computedY = 1 - (b / 255);
-        int minCMY = (int) Math.min(computedC, (int) Math.min(computedM, computedY));
+        float minCMY = Math.min(computedC, Math.min(computedM, computedY));
         float c = (computedC - minCMY) / (1 - minCMY);
         float m = (computedM - minCMY) / (1 - minCMY);
         float y = (computedY - minCMY) / (1 - minCMY);
