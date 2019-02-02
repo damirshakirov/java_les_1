@@ -1,5 +1,7 @@
 package ru.geekbrains.lesson_1;
 
+// ready for review
+
 public class Main {
 
     public static void main(String[] args) {
