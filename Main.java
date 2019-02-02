@@ -18,7 +18,8 @@ public class Main {
         System.out.println(z15(314152232));
         System.out.println(z16(19, 4));
         z17(10, 200, 123);
-
+        z18(10,10,10);
+        System.out.println(z19(0.11, 1.43));
     }
 
     private static int z3(int a, int b, int c, int d) {
@@ -179,5 +180,24 @@ public class Main {
         } else {
             return c;
         }
+    }
+
+    private static void z18(int a, int b, int c) {
+        /*
+        Напишите метод, который получает на вход 3 целых числа, сравнивает их, и
+        выводит в консоль "Все три числа равны" или "не равны".
+         */
+        if ((a == b) && (a == c) && (b == c)) {
+            System.out.println("Все три числа равны");
+        } else System.out.println("Числа не равны");
+    }
+
+    private static boolean z19( double x, double y) {
+        /*
+        Метод, который проверяет, что переменные x и y типа double лежат строго в пределах от 0 до 1.
+         */
+        if ((x >= 0) && (y <= 1) && (y>=0) && (y<=1)) {
+            return true;
+        } return false;
     }
 }
